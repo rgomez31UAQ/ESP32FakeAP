@@ -2,37 +2,27 @@
 <p align="center">
 <img width="399" alt="immagine" src="https://raw.githubusercontent.com/TheKevinWang/ESP32FakeAP/main/FakeAP/esp32_fakeap_bing3.jpg">
 <br>
-Bing Ai generated picture - "A hacker is using an ESP32 to broadcast a fake wifi access point. Logo"
-</p>
+Imagen generada por Bing Ai - "Un hacker utiliza un ESP32 para difundir un falso punto de acceso wifi. Logotipo"</p>
 
-By hosting payloads using files instead of inside .c files like many other ESP32/ESP8266 projects, it's a lot more adaptable and usable. 
-
-## Arduino IDE installation
-
-Download and unzip the following into your arduino libraries directory (~/Documents/Arduino/libraries by default on windows; mkdir if not exit):
-
+Al alojar cargas útiles utilizando archivos en lugar de dentro de archivos .c como muchos otros proyectos ESP32/ESP8266, es mucho más adaptable y utilizable. 
+## Instalación de Arduino IDE
+Descarga y descomprime lo siguiente en tu directorio de librerías de arduino (~/Documents/Arduino/libraries por defecto en windows; mkdir si no sales):
 https://github.com/me-no-dev/ESPAsyncWebServer
 
 https://github.com/me-no-dev/AsyncTCP
 
-Then install this:
-
+Entonces instala esto:
 https://github.com/me-no-dev/arduino-esp32fs-plugin
 
-Make sure to hit Tools->ESP32 Sketch Data Upload after uploading firmware to upload the static web files.
-
-## Example
-By default, the wifi SSID is "Free Guest Wifi" and it is an open AP. All dns requests are redirected to the local webserver. 
-
+Asegúrese de pulsar Herramientas->ESP32 Sketch Data Upload después de cargar el firmware para cargar los archivos web estáticos.
+## Ejemplo
+Por defecto, el SSID wifi es "Free Guest Wifi" y es un AP abierto. Todas las peticiones dns se redirigen al servidor web local. 
 ![phishing example](https://github.com/TheKevinWang/ESP32FakeAP/raw/main/FakeAP/FakeAPExample.png)
 
-The example phishing payload is for a Broadcom firmware update based on [wifiphisher](https://github.com/wifiphisher/wifiphisher)'s fake router configuration page. Replace the "hello world" data/broadcom-wifi-3.0.12.i586.exe with your payload.
-
+El payload de phishing de ejemplo es para una actualización del firmware de Broadcom basada en la falsa página de configuración del router de [wifiphisher](https://github.com/wifiphisher/wifiphisher). Sustituye el "hola mundo" data/broadcom-wifi-3.0.12.i586.exe por tu payload.
 ## TODO
-Add credential phishing
-
-Add deauth and evil twin AP mode
-
+Añadir phishing de credenciales
+Añadir modo deauth y evil twin AP
 ## Disclaimer
 
-Only use this for security testing with permission. 
+Utilícelo sólo para pruebas de seguridad con permiso. 
